@@ -10,4 +10,8 @@ It would be better if it was part of a larger project, providing a secured web b
 
 Obviously the script depends largely on the local infrastructure and has to be adjusted before it can be used elsewhere. It basically starts on a core switch where the mac address will show up when connected anywhere on the campus Lan. It then follows the mac address through CDP until the final access switch is found where the address is shown on the mac address table as type STATIC. It uses regular expressions to do a few things like checking for the mac address input, locating the info from the mac address table (vlan, port, address type) and also some info from the cdp neighbour command (neighbour ip address and platform). It also checks for connection failure and the event that the mac address is not found anywhere. I am sure you can add things on your own and provide improvements. It’s just an idea, I am sure a lot of people can do a lot better. I changed some data for confidentiality issues.
 
-Finally the script uses regex but for grabbig command output, buttextfsm and ntc-templates can be used instead with minimal modifications.
+The Netmiko python library is used to connect to the cisco switches. 
+Kirk Byers is the creator of Netmiko and works on a number of projects including Napalm and Nornir. He is truly an automation expert. I am following his email course.
+@kirkbyers on Twitter, website: https://pynet.twb-tech.com/blog/automation/netmiko.html Kirk 
+
+Finally the script uses regex but for grabbig command output, buttextfsm and ntc-templates can be used instead with minimal modifications. Check my changewandes repo for an example using those templates.
