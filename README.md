@@ -14,4 +14,4 @@ The Netmiko python library is used to connect to the cisco switches.
 Kirk Byers is the creator of Netmiko and works on a number of projects including Napalm and Nornir. He is truly an automation expert. I am following his email course.
 @kirkbyers on Twitter, website: https://pynet.twb-tech.com/blog/automation/netmiko.html Kirk 
 
-Finally the script uses regex but for grabbig command output, buttextfsm and ntc-templates can be used instead with minimal modifications. Check my changewandes repo for an example using those templates.
+Finally the script uses regex but for grabbig command output, buttextfsm and ntc-templates can be used instead with minimal modifications. Check my https://github.com/itheodoridis/nornirchangewandes repo for an example using those templates.
